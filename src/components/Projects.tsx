@@ -4,28 +4,34 @@ import { ExternalLink, Github, ChevronRight } from 'lucide-react';
 const Projects: React.FC = () => {
   const projectList = [
     {
-      title: "Nova CRM Platform",
-      category: "Enterprise SaaS",
-      description: "A comprehensive customer relationship management tool built for high-scale operations. Featuring real-time analytics and predictive forecasting.",
-      tags: ["Next.js", "TypeScript", "Prisma", "AWS"],
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop",
-      color: "blue"
+      title: "SkillSync Pro",
+      category: "Full-Stack Application",
+      description: "Skills and resource management system for skill-based project assignments. Built with React and Node.js, featuring RESTful APIs, SQL-based relational data models, and dynamic frontend interactions.",
+      tags: ["React", "Node.js", "MySQL", "REST API"],
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop",
+      color: "blue",
+      githubUrl: "https://github.com/AvishkaRuwanthi/skillsync-pro.git",
+      liveUrl: "#"
     },
     {
-      title: "Etherum Wallet v2",
-      category: "Fintech & Web3",
-      description: "Non-custodial digital asset manager focusing on security and intuitive onboarding for the next billion crypto users.",
-      tags: ["React", "Ethers.js", "Solidity", "Tailwind"],
-      image: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?q=80&w=1974&auto=format&fit=crop",
-      color: "purple"
+      title: "SEUSL Electronic Voting System",
+      category: "Final Year Project",
+      description: "Secure online voting platform with user authentication, admin/moderator role management, and session handling. Ensures voting integrity through validation logic and prevents duplicate entries.",
+      tags: ["PHP", "MySQL", "Security", "Authentication"],
+      image: "https://images.unsplash.com/photo-1495592822108-9e6261896da8?q=80&w=2070&auto=format&fit=crop",
+      color: "purple",
+      githubUrl: "https://github.com/AvishkaRuwanthi/seusl-election-system.git",
+      liveUrl: "#"
     },
     {
-      title: "StreamLine Studio",
-      category: "Creative Tool",
-      description: "Collaborative design-to-code workspace for agency teams. Real-time multi-user editing with automated deployment pipelines.",
-      tags: ["Node.js", "Socket.io", "MongoDB", "Redis"],
-      image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070&auto=format&fit=crop",
-      color: "pink"
+      title: "MovieMates",
+      category: "Booking System",
+      description: "Online seat booking system with server-side booking logic, form processing, and real-time seat status updates. Features clean UI design and secure database integration.",
+      tags: ["PHP", "MySQL", "Bootstrap", "HTML/CSS"],
+      image: "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=2070&auto=format&fit=crop",
+      color: "green",
+      githubUrl: "https://github.com/AvishkaRuwanthi/MovieMates.git",
+      liveUrl: "#"
     }
   ];
 
@@ -36,17 +42,17 @@ const Projects: React.FC = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <span className="w-12 h-1 bg-blue-600 rounded-full"></span>
-              <span className="text-blue-400 font-bold uppercase tracking-widest text-xs">Case Studies</span>
+              <span className="text-blue-400 font-bold uppercase tracking-widest text-xs">Portfolio</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold">Selected Works</h2>
+            <h2 className="text-4xl md:text-5xl font-bold">Featured Projects</h2>
             <p className="text-gray-400 max-w-xl text-lg font-light leading-relaxed">
-              A curated selection of projects where engineering meets design to solve complex business problems.
+              Real-world applications built with modern web technologies, focusing on functionality and user experience.
             </p>
           </div>
-          <button className="px-8 py-4 bg-white/5 border border-white/10 rounded-full text-white font-semibold hover:bg-white/10 transition-all flex items-center gap-3 group">
+          {/* <button className="px-8 py-4 bg-white/5 border border-white/10 rounded-full text-white font-semibold hover:bg-white/10 transition-all flex items-center gap-3 group">
             All Projects
             <ChevronRight size={18} className="transition-transform group-hover:translate-x-1" />
-          </button>
+          </button> */}
         </div>
 
         <div className="grid lg:grid-cols-3 gap-10">
@@ -63,22 +69,24 @@ const Projects: React.FC = () => {
                 
                 {/* Overlay Controls */}
                 <div className="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-all duration-500 backdrop-blur-sm flex items-center justify-center gap-6">
-                <a 
-                href="#" 
-                className="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center hover:scale-110 transition-all shadow-xl"
-                aria-label="View project on GitHub"
-                title="View on GitHub"
-                >
-                <Github size={20} />
-                </a>
-                <a 
-                href="#" 
-                className="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center hover:scale-110 transition-all shadow-xl"
-                aria-label="View live project"
-                title="View Live Project"
-                >
-                <ExternalLink size={20} />
-                </a>
+                  <a 
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center hover:scale-110 transition-all shadow-xl"
+                    aria-label="View project on GitHub"
+                    title="View on GitHub"
+                  >
+                    <Github size={20} />
+                  </a>
+                  {/* <a 
+                    href="#" 
+                    className="w-12 h-12 bg-white text-black rounded-full flex items-center justify-center hover:scale-110 transition-all shadow-xl"
+                    aria-label="View live project"
+                    title="View Live Project"
+                  >
+                    <ExternalLink size={20} />
+                  </a> */}
                 </div>
               </div>
 
@@ -86,7 +94,7 @@ const Projects: React.FC = () => {
               <div className="p-10 flex flex-col grow bg-linear-to-b from-white/5 to-transparent">
                 <div className="flex justify-between items-start mb-4">
                   <span className="text-blue-500 text-xs font-black uppercase tracking-widest">{project.category}</span>
-                  <div className={`w-2 h-2 rounded-full ${project.color === 'blue' ? 'bg-blue-500 shadow-lg shadow-blue-500' : project.color === 'purple' ? 'bg-purple-500 shadow-lg shadow-purple-500' : 'bg-pink-500 shadow-lg shadow-pink-500'}`}></div>
+                  <div className={`w-2 h-2 rounded-full ${project.color === 'blue' ? 'bg-blue-500 shadow-lg shadow-blue-500' : project.color === 'purple' ? 'bg-purple-500 shadow-lg shadow-purple-500' : 'bg-green-500 shadow-lg shadow-green-500'}`}></div>
                 </div>
                 
                 <h3 className="text-2xl font-bold mb-5 text-white group-hover:text-blue-400 transition-colors duration-300">

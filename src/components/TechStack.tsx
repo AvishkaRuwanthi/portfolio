@@ -2,18 +2,21 @@ import React from 'react';
 
 const TechStack: React.FC = () => {
   const techs = [
+    { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+    { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+    { name: "PHP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
+    { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
     { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
     { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
-    { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
     { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-    { name: "PHP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
-    { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
     { name: "Tailwind", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" },
-    { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" },
-    { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-    { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
-    { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
-    { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+    { name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" },
+    { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+    { name: "Bitbucket", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg" },
+    { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" },
+    { name: "Supabase", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" },
+    { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+    { name: "Postman", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" },
   ];
 
   // Triple for extra smoothness
@@ -24,7 +27,7 @@ const TechStack: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 mb-12 text-center">
         <div className="flex items-center justify-center gap-4 mb-4">
           <div className="h-px w-12 bg-blue-500/30"></div>
-          <p className="text-blue-400 uppercase tracking-widest text-xs font-black">Trusted Technologies</p>
+          <p className="text-blue-400 uppercase tracking-widest text-xs font-black">Tech Stack</p>
           <div className="h-px w-12 bg-blue-500/30"></div>
         </div>
       </div>
@@ -33,10 +36,10 @@ const TechStack: React.FC = () => {
         <div className="flex animate-scroll whitespace-nowrap py-4">
           {list.map((tech, idx) => (
             <div key={idx} className="flex items-center gap-4 px-16 group/item cursor-default transition-all duration-500 hover:scale-110">
-              <div className="w-10 h-10 flex items-center justify-center filter grayscale opacity-40 group-hover/item:opacity-100 group-hover/item:grayscale-0 transition-all duration-500">
-                <img src={tech.icon} alt={tech.name} className="w-full h-full object-contain brightness-0 invert group-hover/item:invert-0 group-hover/item:brightness-100" />
+              <div className="w-10 h-10 flex items-center justify-center transition-all duration-500">
+                <img src={tech.icon} alt={tech.name} className="w-full h-full object-contain" />
               </div>
-              <span className="text-white/30 font-bold text-xl uppercase tracking-widest group-hover/item:text-blue-400 transition-colors">
+              <span className="text-white/60 font-bold text-xl uppercase tracking-widest group-hover/item:text-blue-400 transition-colors">
                 {tech.name}
               </span>
             </div>

@@ -4,16 +4,16 @@ import { Quote, Code2, Rocket, Heart } from 'lucide-react';
 const About: React.FC = () => {
   const recommendations = [
     {
-      name: "Sarah Jenkins",
-      role: "Product Manager at TechFlow",
-      text: "Avishka is a rare talent who combines technical depth with a keen eye for user experience. She delivered our core platform ahead of schedule with zero major bugs.",
-      avatar: "https://picsum.photos/seed/sarah/100/100"
+      name: "Malith Gamage",
+      role: "Co-Founder/Dev - ZapDigits",
+      text: "I’m delighted to recommend Avishka, who worked with me as a full-stack developer intern at ZapDigits. She consistently demonstrated strong technical skills, a positive attitude, and a willingness to take on new challenges. Avishka contributed across both frontend and backend, writing clean, maintainable code and quickly adapting to new tools and tasks. She communicated effectively, handled feedback well, and showed clear improvement throughout the internship. I’m confident she has a bright future as a full-stack developer and would be a valuable addition to any engineering team.",
+      avatar: "assets/Malith Gamage.png"
     },
     {
-      name: "Marcus Thorne",
-      role: "CTO at Nexus Solutions",
-      text: "Having worked with dozens of full-stack engineers, Avishka stands out for her ability to architect scalable systems. Her Node.js expertise saved us months of rework.",
-      avatar: "https://picsum.photos/seed/marcus/100/100"
+      name: "Senior Developer",
+      role: "Co-Founder/UX - ZapDigits",
+      text: "I had a very positive experience working with Avishka. She demonstrated strong technical skills, clear communication, and reliability throughout our collaboration. As a designer, smooth handovers were important, and Avishka handled them effectively. She was also comfortable working with Figma, which made the process even easier. I would gladly recommend collaborating with her and would be happy to work together again in the future.",
+      avatar: "assets/Mandy Matthies.png"
     }
   ];
 
@@ -25,37 +25,37 @@ const About: React.FC = () => {
         <div className="lg:col-span-7 space-y-8">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold uppercase tracking-wider">
             <span className="w-2 h-2 rounded-full bg-blue-500"></span>
-            Our Story
+            My Journey
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-            Crafting the future of <span className="text-blue-500">digital experiences</span> with precision.
+            Building <span className="text-blue-500">production-ready solutions</span> from day one.
           </h2>
           
           <div className="space-y-6 text-gray-400 text-lg leading-relaxed max-w-2xl">
             <p>
-              I am a passionate Full-Stack Developer with over 5 years of experience in crafting digital experiences that live at the intersection of design and technology.
+              I'm a recent Management and IT graduate with hands-on experience building real-world features for SaaS platforms and enterprise systems. Through internships at ZapDigits and SLTMobitel, I've contributed to production codebases that serve hundreds of users.
             </p>
             <p>
-              My philosophy is simple: <span className="text-white font-medium">build for the user, engineer for the scale</span>. I specialize in modern JavaScript frameworks while maintaining a strong foundation in backend architecture and database optimization.
+              My approach is practical: <span className="text-white font-medium">write clean code, solve real problems, and keep learning</span>. I specialize in full-stack development with React, Next.js, TypeScript, and PHP, focusing on building features that make a tangible impact on user experience and business operations.
             </p>
           </div>
 
           <div className="grid sm:grid-cols-3 gap-6 pt-6">
             <div className="backdrop-blur-md bg-white/5 border border-white/10 p-6 rounded-2xl border-l-4 border-l-blue-500">
               <Code2 className="text-blue-500 mb-3" size={24} />
-              <h4 className="text-white font-bold mb-1">Architecture</h4>
-              <p className="text-xs text-gray-500">Clean, scalable systems built to last.</p>
+              <h4 className="text-white font-bold mb-1">Clean Code</h4>
+              <p className="text-xs text-gray-500">Maintainable, well-structured solutions.</p>
             </div>
             <div className="backdrop-blur-md bg-white/5 border border-white/10 p-6 rounded-2xl border-l-4 border-l-purple-500">
               <Rocket className="text-purple-500 mb-3" size={24} />
-              <h4 className="text-white font-bold mb-1">Performance</h4>
-              <p className="text-xs text-gray-500">Optimized for speed and SEO.</p>
+              <h4 className="text-white font-bold mb-1">Fast Learner</h4>
+              <p className="text-xs text-gray-500">Quick to adapt to new tech stacks.</p>
             </div>
             <div className="backdrop-blur-md bg-white/5 border border-white/10 p-6 rounded-2xl border-l-4 border-l-pink-500">
               <Heart className="text-pink-500 mb-3" size={24} />
-              <h4 className="text-white font-bold mb-1">User First</h4>
-              <p className="text-xs text-gray-500">Designs that users actually love.</p>
+              <h4 className="text-white font-bold mb-1">User Impact</h4>
+              <p className="text-xs text-gray-500">Features that solve real problems.</p>
             </div>
           </div>
         </div>
@@ -72,8 +72,8 @@ const About: React.FC = () => {
           {/* Decorative floating elements */}
           <div className="absolute -top-10 -right-10 w-32 h-32 bg-purple-600/20 rounded-full blur-3xl animate-[bounce-slow_3s_infinite]"></div>
           <div className="absolute -bottom-6 -left-6 backdrop-blur-md bg-white/5 border border-white/10 px-8 py-5 rounded-3xl shadow-2xl z-20 animate-bounce-slow">
-            <p className="text-blue-500 font-bold text-4xl mb-1">5+</p>
-            <p className="text-xs text-gray-400 uppercase tracking-widest font-bold">Years Experience</p>
+            <p className="text-blue-500 font-bold text-4xl mb-1">100+</p>
+            <p className="text-xs text-gray-400 uppercase tracking-widest font-bold">Users Impacted</p>
           </div>
         </div>
       </div>
@@ -82,7 +82,7 @@ const About: React.FC = () => {
       <div className="pt-24 border-t border-white/5">
         <div className="text-center mb-16">
           <p className="text-blue-400 font-bold text-xs uppercase tracking-widest mb-4">Testimonials</p>
-          <h3 className="text-3xl font-bold">What Industry Leaders Say</h3>
+          <h3 className="text-3xl font-bold">What My Mentors Say</h3>
         </div>
         
         <div className="grid md:grid-cols-2 gap-10">

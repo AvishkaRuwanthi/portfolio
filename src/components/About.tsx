@@ -10,7 +10,7 @@ const About: React.FC = () => {
       avatar: "assets/Malith Gamage.png"
     },
     {
-      name: "Senior Developer",
+      name: "Mandy Matthies",
       role: "Co-Founder/UX - ZapDigits",
       text: "I had a very positive experience working with Avishka. She demonstrated strong technical skills, clear communication, and reliability throughout our collaboration. As a designer, smooth handovers were important, and Avishka handled them effectively. She was also comfortable working with Figma, which made the process even easier. I would gladly recommend collaborating with her and would be happy to work together again in the future.",
       avatar: "assets/Mandy Matthies.png"

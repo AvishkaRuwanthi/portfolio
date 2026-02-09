@@ -64,7 +64,7 @@ const Contact: React.FC = () => {
           {/* Contact Form */}
           <div className="lg:col-span-8">
             <form 
-              action="https://formsubmit.co/avishkark999@gmail.com" 
+              action="https://formsubmit.co/b8fe283320125717cacdf270c28f47bf" 
               method="POST"
               className="backdrop-blur-md bg-white/5 border border-white/10 p-12 rounded-3xl space-y-8 shadow-2xl"
             >
